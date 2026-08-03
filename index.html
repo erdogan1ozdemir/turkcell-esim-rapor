@@ -1054,6 +1054,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
           <tr><td>iOS / Android ayrı adım anlatımı</td><td><span class="pill p-bad">yok</span></td><td><span class="pill p-pos">var</span> <span class="muted">(5 + 5 adım)</span></td><td><span class="pill p-pos">var</span> <span class="muted">(çok sekmeli)</span></td></tr>
           <tr><td>Sekmeli akış bileşeni</td><td><span class="pill p-bad">yok</span></td><td><span class="pill p-pos">var</span></td><td><span class="pill p-pos">var</span></td></tr>
           <tr><td>Cihaz uyumluluk listesi</td><td><span class="pill p-amber">sorgulama aracı</span> <span class="muted">· liste ayrı sayfada</span></td><td><span class="pill p-pos">sayfa içinde</span></td><td><span class="pill p-pos">sayfa içinde</span></td></tr>
+          <tr><td>Cihaz listesinde kapsanan marka</td><td class="num">3 <span class="muted">(Apple · Samsung · Xiaomi)</span></td><td class="num">6</td><td class="num">6</td></tr>
+          <tr><td>Aktivasyon anlatım katmanı</td><td class="num">1 <span class="muted">(3 adım)</span></td><td class="num">2 <span class="muted">(5 + 5 adım)</span></td><td class="num">4 <span class="muted">(en uzun akış 11 adım)</span></td></tr>
           <tr><td>eSIM geçiş ücreti beyanı</td><td><span class="pill p-bad">sayfada yer almıyor</span></td><td><span class="pill p-bad">sayfada yer almıyor</span></td><td><span class="pill p-bad">sayfada yer almıyor</span></td></tr>
           <tr><td>Görünür metin</td><td>9.073 krk</td><td>31.415 krk</td><td>23.199 krk</td></tr>
           <tr><td>H1-H3 başlık sayısı</td><td class="num">26</td><td class="num">45</td><td class="num">63</td></tr>
@@ -1398,6 +1400,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <div class="rec">
       <div class="rec__head"><span class="ttl">4. Cihaz uyumluluk deneyimi</span><span class="prio prio-2">Yüksek</span></div>
       <p>Cihaz uyumluluk bölümü sorgulama aracı olarak kurgulanmıştır; uyumlu cihaz listesi ayrı bir Pasaj sayfasında bulunmaktadır. Rakiplerin ikisinde de liste sayfa içindedir. Cihaz uyumu kümesi 102 kelime ve 12.500 aylık hacim taşımaktadır; "telefonum e sim destekliyor mu" tek başına 1.300 hacim ve KD 0 düzeyindedir.</p>
+    <p>Pasaj sayfası incelendiğinde listenin bir mağaza listelemesi olduğu görülmektedir: 32 ürün, üç marka (Apple 22 · Samsung 9 · Xiaomi 1). Aynı sorguda 1. sırada yer alan turksim.com ise on üzerinde markayı ve ayrıca akıllı saat bölümünü kapsamaktadır. Uyumluluk anlatımının satıştaki ürün listesinden ayrı, marka bazlı bir kapsam olarak kurulması değerlendirilebilir.</p>
       <p><b>Öneri:</b> Sorgulama aracının korunması, altına marka bazlı gruplanmış uyumlu cihaz listesinin gerçek HTML tablosu olarak eklenmesi önerilir. Bu düzenleme hem kullanıcı sorusunu araç kullanmadan cevaplayabilir hem machine-readable içerik üretebilir.</p>
     </div>
 
@@ -1545,6 +1548,9 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <h3>Kaynaklar</h3>
     <ul>
       <li><b>Performans ve saha verisi:</b> PageSpeed Insights · Lighthouse 13.4.1 · Chrome User Experience Report (CrUX) p75 · 3 Ağustos 2026, 15:14-15:18 UTC</li>
+      <li><b>Cihaz uyumluluğu:</b> turkcell.com.tr Pasaj "eSIM ile Uyumlu Cihazlar" sayfası · render edilmiş sayfa incelemesi · 3 Ağustos 2026</li>
+      <li><b>Rakip aktivasyon anlatımı:</b> vodafone.com.tr/servisler/e-sim ve turktelekom.com.tr/esim · canlı sayfa incelemesi ve ekran görüntüsü · 3 Ağustos 2026</li>
+      <li><b>Yurt dışı paketleri:</b> turkcell.com.tr/paket-ve-tarifeler/yurt-disinda-kullanim · 18 paket sayfası · 3 Ağustos 2026</li>
       <li><b>SERP, AI Overview, PAA:</b> Google Türkiye canlı sonuç sayfaları (konum: Türkiye, dil: tr) · 13 sorgu-cihaz kesiti · 14:51-15:23</li>
       <li><b>Arama hacmi ve KD:</b> Arama hacmi ve keyword difficulty verisi · aylık ortalama · 1.638 kelime / 405.070 arama</li>
       <li><b>Sayfa yapısı ve işaretleme:</b> Ham HTML analizi ve tarayıcı ölçümü · 1440x900 ve 412x915 viewport</li>
