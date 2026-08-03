@@ -80,7 +80,7 @@ ul,ol{margin:9px 0 9px 20px}li{margin:4px 0}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
 .kpi{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:var(--r-md);padding:15px 16px;box-shadow:var(--shadow)}
-.kpi .lab{font-size:.74rem;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em}
+.kpi .lab{font-size:.74rem;font-weight:700;color:var(--ink-3);text-transform:none;letter-spacing:.05em}
 .kpi .val{font-size:1.55rem;font-weight:800;color:var(--brand);line-height:1.2;margin:4px 0 2px}
 .kpi .val small{font-size:.85rem;font-weight:700;color:var(--ink-2)}
 .kpi .note{font-size:.78rem;color:var(--ink-3);line-height:1.4}
@@ -98,7 +98,7 @@ ul,ol{margin:9px 0 9px 20px}li{margin:4px 0}
 .insight{background:var(--surface);border:1.5px solid var(--accent-soft);border-radius:var(--r-lg);padding:17px 20px;margin:14px 0;box-shadow:0 0 0 1px var(--accent-soft),0 10px 30px rgba(0,15,100,.07)}
 .insight b{color:var(--brand)}
 .insight .lead-in{display:inline-flex;align-items:center;gap:7px;font-weight:800;color:var(--brand);margin-right:4px}
-.insight .lead-in::before{content:"\27A6";color:var(--accent-deep)}
+.insight .lead-in::before{content:"\2794";color:var(--accent-deep)}
 
 /* tables */
 .table-wrap{overflow-x:auto;border:1.5px solid var(--line-strong);border-radius:var(--r-md);margin:14px 0;box-shadow:var(--shadow);background:var(--surface)}
@@ -272,7 +272,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
   <section class="section" id="ozet">
     <div class="eyebrow">01 · Yönetici Özeti</div>
     <h2>Yönetici Özeti</h2>
-    <p>Sayfa teknik tarafta karşılaştırma setinin en güçlü konumundadır. Geliştirme alanları hız tarafında değil, içerik derinliği, görünürlük konsolidasyonu, yapılandırılmış veri ve ilk ekran kurgusu tarafındadır.</p>
+    <p>Sayfa teknik tarafta karşılaştırma setinin en güçlü konumundadır. Geliştirme alanları hız tarafında değil, içerik derinliği, görünürlük konsolidasyonu, schema işaretlemesi ve ilk ekran kurgusu tarafındadır.</p>
 
     <div class="grid-3">
       <div class="card">
@@ -295,32 +295,32 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <h3>Gösterge Paneli</h3>
     <div class="kpi-grid">
       <div class="kpi">
-        <div class="lab">Organik sıra · "esim"</div>
+        <div class="lab">ORGANİK SIRA · "ESIM"</div>
         <div class="val">4 <small>masaüstü · 3 mobil</small></div>
         <div class="note">Türk Telekom 2, Vodafone 3. Sıra gün içinde 3-4 arasında dalgalanmaktadır.</div>
       </div>
       <div class="kpi watch">
-        <div class="lab">AI Overview tanım sahipliği</div>
+        <div class="lab">AI OVERVIEW TANIM SAHİPLİĞİ</div>
         <div class="val">1 / 12</div>
         <div class="note">12 panelin 8'inde tanım kaynağı Vodafone. Turkcell yalnızca marka sorgusunda tanım kaynağıdır.</div>
       </div>
       <div class="kpi watch">
-        <div class="lab">İçerik hacmi</div>
+        <div class="lab">İÇERİK HACMİ</div>
         <div class="val">9.073 <small>karakter</small></div>
-        <div class="note">Türk Telekom 23.199 (2,6x) · Vodafone 31.415 (3,5x).</div>
+        <div class="note">Türk Telekom 23.199 (2.6x) · Vodafone 31.415 (3.5x).</div>
       </div>
       <div class="kpi good">
-        <div class="lab">Core Web Vitals</div>
+        <div class="lab">CORE WEB VITALS</div>
         <div class="val">5 / 5</div>
-        <div class="note">LCP 1,05 sn · INP 147 ms · CLS 0,00 · FCP 0,96 sn · TTFB 308 ms (mobil saha verisi).</div>
+        <div class="note">LCP 1.05 sn · INP 147 ms · CLS 0.00 · FCP 0.96 sn · TTFB 308 ms (mobil saha verisi).</div>
       </div>
       <div class="kpi watch">
-        <div class="lab">Yapılandırılmış veri</div>
+        <div class="lab">SCHEMA / JSON-LD</div>
         <div class="val">0 <small>JSON-LD bloğu</small></div>
         <div class="note">Vodafone 3 blok (FAQPage, BreadcrumbList, Organization/WebSite) taşımaktadır.</div>
       </div>
       <div class="kpi watch">
-        <div class="lab">Hero ekran oranı</div>
+        <div class="lab">HERO EKRAN ORANI</div>
         <div class="val">%70</div>
         <div class="note">Masaüstünde 631 px hero içinde 346 px boş alan; ilk ekranda dönüşüm CTA'sı yer almamaktadır.</div>
       </div>
@@ -343,7 +343,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <ul>
           <li>Görünürlük üç ayrı Turkcell URL'ine dağılmıştır; hedef sayfa 13 kesitin yalnızca 3'ünde sıralanan sayfadır.</li>
           <li>16 SSS için <span class="term" data-term="schema">schema</span> işaretlemesi bulunmamaktadır.</li>
-          <li>Yazım varyantı talebinin %59,7'si boşluklu formda; sayfa yalnızca bitişik "eSIM" formunu kullanmaktadır.</li>
+          <li>Yazım varyantı talebinin %59.7'si boşluklu formda; sayfa yalnızca bitişik "eSIM" formunu kullanmaktadır.</li>
           <li>"esim yurtdışı" ve "seyahat esim" kesitlerinde üç operatör de ilk 20 dışındadır.</li>
           <li>Aktivasyon anlatımı üç soyut adımdan oluşmakta, rakipler işletim sistemi bazlı sekmeli akış sunmaktadır.</li>
         </ul>
@@ -438,7 +438,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <div class="insight">
-      <span class="lead-in">Bulgu</span> SSS bölümü tek başına masaüstü sayfa yüksekliğinin <b>%40'ını</b> oluşturmaktadır (1.406 px / 3.527 px). Sayfanın en hacimli bölümü <span class="term" data-term="schema">yapılandırılmış veri</span> ile işaretlenmemiş durumdadır; bu blok, işaretleme eklendiğinde arama ve yapay zeka yüzeylerinde en yüksek karşılığı üretebilecek alandır.
+      <span class="lead-in">Bulgu</span> SSS bölümü tek başına masaüstü sayfa yüksekliğinin <b>%40'ını</b> oluşturmaktadır (1.406 px / 3.527 px). Sayfanın en hacimli bölümü <span class="term" data-term="schema">schema</span> ile işaretlenmemiş durumdadır; bu blok, işaretleme eklendiğinde arama ve yapay zeka yüzeylerinde en yüksek karşılığı üretebilecek alandır.
     </div>
 
     <h3>CTA Envanteri (masaüstü)</h3>
@@ -455,7 +455,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       </table>
     </div>
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Sayfada yalnızca <b>5 etkileşim öğesi</b> bulunmaktadır ve hero alanında dönüşüm CTA'sı yer almamaktadır. Birincil aksiyon olan "Hemen Başla" 1.287 px konumunda, yani ilk ekranın yaklaşık <b>1,4 ekran altında</b>dır. Hero içine birincil CTA yerleştirilmesi değerlendirilebilir.
+      <span class="lead-in">Bulgu</span> Sayfada yalnızca <b>5 etkileşim öğesi</b> bulunmaktadır ve hero alanında dönüşüm CTA'sı yer almamaktadır. Birincil aksiyon olan "Hemen Başla" 1.287 px konumunda, yani ilk ekranın yaklaşık <b>1.4 ekran altında</b>dır. Hero içine birincil CTA yerleştirilmesi değerlendirilebilir.
     </div>
 
     <h3>Ekran Görüntüleri</h3>
@@ -525,7 +525,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <p class="tcap">SERP özellikleri: AI Overview · PAA · video karosel · related searches · <span class="term" data-term="Knowledge Graph">Knowledge Graph</span> (eSIM). Ölçüm 15:23 doğrulaması.</p>
 
     <div class="callout callout--info">
-      <p><b>Rekabet ekseni tek başına operatörlerden oluşmamaktadır.</b> "esim" jenerik kesitinde ilk 8 sonucun 4'ü operatör dışı kaynaklardır: seyahat eSIM sağlayıcıları (roamic, esim.io), uygulama mağazası, perakende yayın ve üretici dokümantasyonu. Kategori tanımı ve seyahat kullanımı, operatör sayfalarının dışındaki kaynaklar tarafından karşılanmaktadır.</p>
+      <p><b>Rekabet ekseni tek başına operatörlerden oluşmamaktadır.</b> "esim" jenerik kesitinde ilk 8 sonucun 5'i operatör dışı kaynaklardır: seyahat eSIM sağlayıcıları (roamic, esim.io), uygulama mağazası, perakende yayın ve üretici dokümantasyonu. Kategori tanımı ve seyahat kullanımı, operatör sayfalarının dışındaki kaynaklar tarafından karşılanmaktadır.</p>
     </div>
 
     <h3>URL Parçalanması</h3>
@@ -558,8 +558,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <div class="donut-wrap">
         <div class="donut" role="img" aria-label="12 AI Overview panelinden 8'inde tanım kaynağı Vodafone, 1'inde Turkcell, 3'ünde diğer kaynaklar"></div>
         <div class="legend">
-          <div><i style="background:var(--brand)"></i><b>Vodafone · 8 panel</b> (%66,7) · vodafone.com.tr/servisler/e-sim</div>
-          <div><i style="background:var(--accent)"></i><b>Turkcell · 1 panel</b> (%8,3) · yalnızca "turkcell esim" marka sorgusunda</div>
+          <div><i style="background:var(--brand)"></i><b>Vodafone · 8 panel</b> (%66.7) · vodafone.com.tr/servisler/e-sim</div>
+          <div><i style="background:var(--accent)"></i><b>Turkcell · 1 panel</b> (%8.3) · yalnızca "turkcell esim" marka sorgusunda</div>
           <div><i style="background:#B9C2DE"></i><b>Diğer · 3 panel</b> (%25) · esimy.net, Instagram reel, tr.esimo.io</div>
         </div>
       </div>
@@ -584,7 +584,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Turkcell, tanım kaynağı konumuna yalnızca marka sorgusunda ulaşmaktadır. Jenerik sorgularda referans listesinde yer aldığı halde (2.-4. sıralar) tanım cümlesini veren kaynak Vodafone'dur. <b>Beş kesitte ise referans listesinde hiç yer almamaktadır</b>: esim nasıl aktif edilir · esim ücreti · esim uyumlu telefonlar · esim yurtdışı · seyahat esim.
+      <span class="lead-in">Bulgu</span> Turkcell, tanım kaynağı konumuna yalnızca marka sorgusunda ulaşmaktadır. Jenerik sorgularda referans listesinde yer aldığı halde (2.-4. sıralar) tanım cümlesini veren kaynak Vodafone'dur. <b>Beş sorguda (altı panelde) ise referans listesinde yer almamaktadır</b>: esim nasıl aktif edilir · esim ücreti · esim uyumlu telefonlar · esim yurtdışı · seyahat esim.
     </div>
 
     <h3>Ticari Sorgularda Referans Dışında Kalma</h3>
@@ -600,7 +600,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <h3>PAA · Cevap Kaynağı Durumu</h3>
-    <p>48 tekil PAA sorusundan 39'u yapay zeka tarafından genişletilmekte (yayıncı atfı taşımamakta), 9'u domain atıflıdır. <b>turkcell.com.tr hiçbir PAA sorusunda cevap kaynağı değildir.</b></p>
+    <p>48 tekil PAA sorusundan 39'u yapay zeka tarafından genişletilmekte (yayıncı citation'ı taşımamakta), 9'u domain citation'ı taşımaktadır. <b>turkcell.com.tr hiçbir PAA sorusunda cevap kaynağı değildir.</b></p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Domain atfı taşıyan PAA sorusu</th><th>Cevaplayan kaynak</th></tr></thead>
@@ -618,13 +618,13 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       </table>
     </div>
     <div class="insight">
-      <span class="lead-in">Bulgu</span> İki Turkcell markalı soru, marka dışı kaynaklara bağlanmaktadır: "Turkcell eSIM kaç saatte açılır?" sorusu 2023 tarihli üçüncü taraf bir PDF'e, "Turkcell'de eSIM var mı?" sorusu KKTCell alan adına atfedilmektedir. Bu iki sorunun sayfa içinde açık ve işaretlenmiş biçimde cevaplanması, marka sorgularında cevap kaynağı konumunun markaya taşınmasına katkı sağlayabilir.
+      <span class="lead-in">Bulgu</span> İki Turkcell markalı soruda citation marka dışı kaynaklara gitmektedir: "Turkcell eSIM kaç saatte açılır?" sorusunda 2023 tarihli üçüncü taraf bir PDF, "Turkcell'de eSIM var mı?" sorusunda KKTCell alan adı citation almaktadır. Bu iki sorunun sayfa içinde açık ve işaretlenmiş biçimde cevaplanması, marka sorgularında cevap kaynağı konumunun markaya taşınmasına katkı sağlayabilir.
     </div>
 
     <h3>En Yoğun PAA Kümeleri</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Küme</th><th class="num">Tekil soru</th><th class="num">Toplam gösterim</th><th>Not</th></tr></thead>
+        <thead><tr><th>Küme</th><th class="num">Tekil soru</th><th class="num">Toplam Impression</th><th>Not</th></tr></thead>
         <tbody>
           <tr class="us"><td><b>Fiyat / ücret</b></td><td class="num">10</td><td class="num">20</td><td>"eSIM ücreti kaç TL?" tek başına 6 kesitte görünmektedir</td></tr>
           <tr><td>Edinme / başvuru</td><td class="num">9</td><td class="num">15</td><td>"Ücretsiz eSIM nasıl alınır?" 3 kesitte</td></tr>
@@ -635,6 +635,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         </tbody>
       </table>
     </div>
+    <p class="tcap">Fiyat / ücret kümesi 10 tekil soru ve 20 Impression ile setin en yoğun kümesidir.</p>
 
     <h3>GEO Yol Haritası</h3>
     <div class="rec">
@@ -644,7 +645,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
     <div class="rec">
       <div class="rec__head"><span class="ttl">2. FAQPage işaretlemesi</span><span class="prio prio-1">Öncelikli</span></div>
-      <p>Sayfada halihazırda 16 SSS bulunmakta, sayfa yüksekliğinin %40'ını oluşturmaktadır. Bu blok için <span class="term" data-term="FAQPage">FAQPage</span> <span class="term" data-term="JSON-LD">JSON-LD</span> eklenmesi, soru-cevap içeriğinin makine tarafında ayrıştırılabilir hale gelmesini sağlar. Vodafone sayfası bu işaretlemeyi halihazırda taşımaktadır.</p>
+      <p>Sayfada halihazırda 16 SSS bulunmakta, sayfa yüksekliğinin %40'ını oluşturmaktadır. Bu blok için <span class="term" data-term="FAQPage">FAQPage</span> <span class="term" data-term="JSON-LD">JSON-LD</span> eklenmesi, soru-cevap içeriğinin makine tarafında ayrıştırılabilir hale gelmesini sağlayabilir. Vodafone sayfası bu işaretlemeyi halihazırda taşımaktadır.</p>
       <p class="meta">Etki alanı: PAA cevap kaynağı olma · AI Overview referans havuzu · rich result uygunluğu</p>
     </div>
     <div class="rec">
@@ -654,7 +655,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
     <div class="rec">
       <div class="rec__head"><span class="ttl">4. Fiyat beyanının sayfaya taşınması</span><span class="prio prio-1">Öncelikli</span></div>
-      <p>Fiyat kümesi hem PAA'da (10 tekil soru / 20 gösterim) hem talep havuzunda (59 kelime / 14.700 hacim) en yoğun kümelerden biridir. Ücret bilgisinin sayfada net biçimde beyan edilmesi değerlendirilebilir; şu an bu sorunun cevabı Ekşi Sözlük ve üçüncü taraf kaynaklardan gelmektedir.</p>
+      <p>Fiyat kümesi hem PAA'da (10 tekil soru / 20 Impression) hem talep havuzunda (59 kelime / 14.700 hacim) en yoğun kümelerden biridir. Ücret bilgisinin sayfada net biçimde beyan edilmesi değerlendirilebilir; şu an bu sorunun cevabı Ekşi Sözlük ve üçüncü taraf kaynaklardan gelmektedir.</p>
       <p class="meta">Etki alanı: "esim ücreti" AI Overview paneli · "e sim ücreti" 3.600 · "turkcell e sim ücreti" 1.300</p>
     </div>
     <div class="rec">
@@ -673,7 +674,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
   <section class="section" id="talep">
     <div class="eyebrow">06 · Talep</div>
     <h2>Talep Havuzu &amp; <span class="term" data-term="Content Gap">Content Gap</span></h2>
-    <p>Değerlendirilen havuz 1.638 kelime ve 405.070 aylık aramadan oluşmaktadır. Havuz dört ana bloğa ayrılmaktadır: jenerik eSIM talebi (973 kelime / 213.200), yurtdışı ve seyahat (384 kelime / 119.560), operatör ve marka seti (281 kelime / 72.310) ve kapsam dışı IMEI kümesi.</p>
+    <p>Değerlendirilen havuz 1.638 kelime ve 405.070 aylık aramadan oluşmaktadır. Havuz üç ana bloğa ayrılmaktadır: jenerik eSIM talebi (973 kelime / 213.200), yurtdışı ve seyahat (384 kelime / 119.560), operatör ve marka seti (281 kelime / 72.310). Operatör eSIM ürünüyle örtüşmeyen IMEI / kayıtsız telefon kümesi (33 kelime / 10.480) jenerik blok içinde ayrı işaretlenmiştir.</p>
 
     <h3>Yazım Varyantı</h3>
     <p>Havuzdaki en belirleyici bulgu, iki yazım formunun farklı hacim taşımasıdır. Sayfa metni ve başlıklarında yalnızca bitişik "eSIM" formu kullanılmaktadır.</p>
@@ -697,8 +698,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Yazım formu</th><th class="num">Kelime</th><th class="num">Aylık hacim</th><th class="num">Pay</th></tr></thead>
           <tbody>
-            <tr class="us"><td>Boşluklu / tireli ("e sim")</td><td class="num">669</td><td class="num">207.960</td><td class="num"><b>%59,7</b></td></tr>
-            <tr><td>Bitişik ("esim")</td><td class="num">958</td><td class="num">140.450</td><td class="num">%40,3</td></tr>
+            <tr class="us"><td>Boşluklu / tireli ("e sim")</td><td class="num">669</td><td class="num">207.960</td><td class="num"><b>%59.7</b></td></tr>
+            <tr><td>Bitişik ("esim")</td><td class="num">958</td><td class="num">140.450</td><td class="num">%40.3</td></tr>
           </tbody>
         </table>
       </div>
@@ -706,8 +707,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Sorgu çifti</th><th class="num">Boşluklu</th><th class="num">Bitişik</th><th class="num">Oran</th></tr></thead>
           <tbody>
-            <tr class="us"><td>e sim nedir / esim nedir</td><td class="num">22.200</td><td class="num">5.400</td><td class="num"><b>4,1x</b></td></tr>
-            <tr><td>e sim nasıl alınır / esim nasıl alınır</td><td class="num">8.100</td><td class="num">1.900</td><td class="num">4,3x</td></tr>
+            <tr class="us"><td>e sim nedir / esim nedir</td><td class="num">22.200</td><td class="num">5.400</td><td class="num"><b>4.1x</b></td></tr>
+            <tr><td>e sim nasıl alınır / esim nasıl alınır</td><td class="num">8.100</td><td class="num">1.900</td><td class="num">4.3x</td></tr>
             <tr><td>e sim ücreti / esim ücreti</td><td class="num">3.600</td><td class="num">-</td><td class="num">-</td></tr>
           </tbody>
         </table>
@@ -724,7 +725,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Fark head term düzeyinde %22'de kalırken bilgi sorgularında <b>4,1x</b> düzeyine çıkmaktadır. Sayfa yalnızca bitişik formu kullandığından, talebin daha büyük bölümünü oluşturan boşluklu form sayfa metninde karşılık bulmamaktadır. Gövde metni, ara başlıklar ve SSS sorularında her iki yazımın doğal biçimde kullanılması değerlendirilebilir.
+      <span class="lead-in">Bulgu</span> Fark head term düzeyinde %22'de kalırken bilgi sorgularında <b>4.1x</b> düzeyine çıkmaktadır. Sayfa yalnızca bitişik formu kullandığından, talebin daha büyük bölümünü oluşturan boşluklu form sayfa metninde karşılık bulmamaktadır. Gövde metni, ara başlıklar ve SSS sorularında her iki yazımın doğal biçimde kullanılması değerlendirilebilir.
     </div>
 
     <div class="callout callout--info">
@@ -738,21 +739,22 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <thead><tr><th>Tema</th><th class="num">Kelime</th><th class="num">Aylık hacim</th><th>Sayfadaki karşılığı</th></tr></thead>
         <tbody>
           <tr class="us"><td><b>Tanım (nedir / ne demek / ne işe yarar)</b></td><td class="num">27</td><td class="num"><b>32.920</b></td><td><span class="pill p-amber">SSS içinde tek soru</span></td></tr>
-          <tr><td>Fiyat / ücret</td><td class="num">59</td><td class="num">14.700</td><td><span class="pill p-bad">karşılık yok</span></td></tr>
+          <tr><td>Fiyat / ücret</td><td class="num">59</td><td class="num">14.700</td><td><span class="pill p-bad">karşılık bulunmuyor</span></td></tr>
           <tr><td>Cihaz uyumu</td><td class="num">102</td><td class="num">12.500</td><td><span class="pill p-pos">bölüm var</span></td></tr>
           <tr><td>Satın alma (nasıl alınır / nereden / başvuru)</td><td class="num">11</td><td class="num">12.300</td><td><span class="pill p-amber">SSS içinde</span></td></tr>
           <tr><td>Aktivasyon / kurulum</td><td class="num">42</td><td class="num">10.680</td><td><span class="pill p-amber">3 soyut adım</span></td></tr>
           <tr><td>IMEI / kayıtsız telefon</td><td class="num">33</td><td class="num">10.480</td><td><span class="pill p-gray">kapsam dışı</span></td></tr>
           <tr><td>QR kod / karekod</td><td class="num">30</td><td class="num">8.020</td><td><span class="pill p-pos">SSS içinde (3 soru)</span></td></tr>
-          <tr><td>Sağlayıcı karşılaştırma</td><td class="num">43</td><td class="num">6.930</td><td><span class="pill p-bad">karşılık yok</span></td></tr>
+          <tr><td>Sağlayıcı karşılaştırma</td><td class="num">43</td><td class="num">6.930</td><td><span class="pill p-bad">karşılık bulunmuyor</span></td></tr>
           <tr><td>Kullanım</td><td class="num">18</td><td class="num">6.520</td><td><span class="pill p-amber">kısmi</span></td></tr>
-          <tr><td>Yasal / erişim engeli</td><td class="num">14</td><td class="num">3.480</td><td><span class="pill p-bad">karşılık yok</span></td></tr>
+          <tr><td>Yasal / erişim engeli</td><td class="num">14</td><td class="num">3.480</td><td><span class="pill p-bad">karşılık bulunmuyor</span></td></tr>
           <tr><td>Taşıma / silme / iptal</td><td class="num">23</td><td class="num">2.340</td><td><span class="pill p-pos">SSS içinde (4 soru)</span></td></tr>
-          <tr><td>e-Devlet onayı</td><td class="num">12</td><td class="num">1.280</td><td><span class="pill p-bad">karşılık yok</span></td></tr>
+          <tr><td>e-Devlet onayı</td><td class="num">12</td><td class="num">1.280</td><td><span class="pill p-bad">karşılık bulunmuyor</span></td></tr>
           <tr><td>Sorun giderme</td><td class="num">16</td><td class="num">1.150</td><td><span class="pill p-amber">kısmi</span></td></tr>
         </tbody>
       </table>
     </div>
+    <p class="tcap">Aylık hacmi en yüksek tema olan tanım (32.920), sayfada tek bir SSS sorusuyla karşılanmaktadır.</p>
 
     <h4>Öne çıkan jenerik sorgular</h4>
     <div class="table-wrap">
@@ -781,10 +783,10 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Alt segment</th><th class="num">Hacim</th><th class="num">Pay</th></tr></thead>
           <tbody>
-            <tr><td><b>Global sağlayıcı markaları</b></td><td class="num">81.390</td><td class="num"><b>%68,1</b></td></tr>
-            <tr><td>Inbound (Türkiye'ye gelen yabancı)</td><td class="num">16.040</td><td class="num">%13,4</td></tr>
-            <tr><td>"yurtdışı / yurt dışı" jenerik</td><td class="num">15.340</td><td class="num">%12,8</td></tr>
-            <tr><td>Ülke / bölge bazlı</td><td class="num">5.500</td><td class="num">%4,6</td></tr>
+            <tr><td><b>Global sağlayıcı markaları</b></td><td class="num">81.390</td><td class="num"><b>%68.1</b></td></tr>
+            <tr><td>Inbound (Türkiye'ye gelen yabancı)</td><td class="num">16.040</td><td class="num">%13.4</td></tr>
+            <tr><td>"yurtdışı / yurt dışı" jenerik</td><td class="num">15.340</td><td class="num">%12.8</td></tr>
+            <tr><td>Ülke / bölge bazlı</td><td class="num">5.500</td><td class="num">%4.6</td></tr>
           </tbody>
         </table>
       </div>
@@ -828,6 +830,40 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         </table>
       </div>
     </div>
+
+    <h3>Ürün Tarafı: eSIM ile Yurt Dışı Paketleri Arasındaki Bağ</h3>
+    <p>Talep tarafındaki bu boşluğun ürün tarafında da bir karşılığı bulunmaktadır. turkcell.com.tr üzerindeki yurt dışı paket sayfaları ile eSIM sayfaları birbirine bağlanmamaktadır.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>İnceleme</th><th class="num">Sonuç</th></tr></thead>
+        <tbody>
+          <tr><td>Yurt dışı paket detay sayfasında "eSIM" ifadesinin geçiş sayısı</td><td class="num"><span class="pill p-bad">0 / 18 sayfa</span></td></tr>
+          <tr><td><code>/servisler/bilgi/turkcell-e-sim</code> sayfasında "yurt dışı", "roaming" veya "seyahat" geçişi</td><td class="num"><span class="pill p-bad">0</span></td></tr>
+          <tr><td><code>/destek/yurtdisi</code> sayfasında "eSIM" geçişi</td><td class="num"><span class="pill p-bad">0</span></td></tr>
+          <tr><td>İki ürün arasındaki tek bağlantı</td><td class="num">footer bağlantısı</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tcap">Kapsam: <code>/paket-ve-tarifeler/yurt-disinda-kullanim</code> altındaki 18 benzersiz paket sayfası · 3 Ağustos 2026.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Paket</th><th>Kapsam</th><th class="num">Data</th><th class="num">Süre</th><th class="num">Fiyat</th></tr></thead>
+        <tbody>
+          <tr><td>Avrupa Gezgin 1 GB</td><td>Avrupa · 40 ülke</td><td class="num">1 GB</td><td class="num">1 hafta</td><td class="num">300 TL</td></tr>
+          <tr><td>Avrupa Gezgin 3 GB</td><td>Avrupa · 40 ülke</td><td class="num">3 GB</td><td class="num">2 hafta</td><td class="num">600 TL</td></tr>
+          <tr><td>Avrupa Gezgin 10 GB</td><td>Avrupa · 40 ülke</td><td class="num">10 GB</td><td class="num">2 hafta</td><td class="num">1.200 TL</td></tr>
+          <tr><td>Global 1 GB</td><td>172 ülke</td><td class="num">1 GB</td><td class="num">1 hafta</td><td class="num">600 TL</td></tr>
+          <tr><td>Global 3 GB</td><td>172 ülke</td><td class="num">3 GB</td><td class="num">2 hafta</td><td class="num">1.200 TL</td></tr>
+          <tr><td>KKTC 1 GB</td><td>KKTC</td><td class="num">1 GB</td><td class="num">1 hafta</td><td class="num">400 TL</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tcap">Kataloğun tamamı 18 pakettir; tabloda eSIM ile birlikte konumlandırılmaya en uygun altı paket yer almaktadır.</p>
+
+    <div class="insight">
+      <span class="lead-in">Bulgu</span> "turkcell yurtdışı internet paketi" tek başına <b>1.900</b> aylık arama taşımaktadır ve KD değeri <b>0</b> seviyesindedir. Mevcut katalog 18 pakete ulaşmasına karşın bu paketler eSIM anlatımına bağlanmamaktadır. eSIM sayfasında yurt dışı kullanımına ayrılmış bir bölüm ve paketlere yönlendirme, hem karşılıksız kalan seyahat talebine hem de mevcut ürün katalogunun görünürlüğüne karşılık üretebilir.
+    </div>
     <div class="insight">
       <span class="lead-in">Bulgu</span> Inbound kümesi <b>KD 0-6</b> bandında, düşük rekabetli 16.040 aylık hacim taşımaktadır ve İngilizce/Almanca sorgulardan oluşmaktadır. "vodafone esim turkey" 210 hacimle marka sorgusu haline gelmişken "turkcell esim tourist" 140 seviyesindedir. Türkiye'ye gelen ziyaretçiye yönelik İngilizce bir eSIM sayfası, bu segmentte düşük rekabetli bir giriş noktası oluşturabilir.
     </div>
@@ -838,9 +874,9 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <div class="chart-card" style="margin-top:0">
         <h4>Marka bazlı hacim dağılımı</h4>
         <div class="sub">281 kelime / 72.310 aylık hacim</div>
-        <div class="bar-row"><span class="bar-lbl">Turkcell · 105 kelime</span><div class="bar-track"><div class="bar-fill us" style="width:100%">28.420 · %39,3</div></div></div>
-        <div class="bar-row"><span class="bar-lbl">Vodafone · 100 kelime</span><div class="bar-track"><div class="bar-fill" style="width:77%">21.880 · %30,3</div></div></div>
-        <div class="bar-row"><span class="bar-lbl">Türk Telekom · 67 kelime</span><div class="bar-track"><div class="bar-fill" style="width:73.9%">21.010 · %29,1</div></div></div>
+        <div class="bar-row"><span class="bar-lbl">Turkcell · 105 kelime</span><div class="bar-track"><div class="bar-fill us" style="width:100%">28.420 · %39.3</div></div></div>
+        <div class="bar-row"><span class="bar-lbl">Vodafone · 100 kelime</span><div class="bar-track"><div class="bar-fill" style="width:77%">21.880 · %30.3</div></div></div>
+        <div class="bar-row"><span class="bar-lbl">Türk Telekom · 67 kelime</span><div class="bar-track"><div class="bar-fill" style="width:73.9%">21.010 · %29.1</div></div></div>
         <div class="bar-row"><span class="bar-lbl">Diğer · 8 kelime</span><div class="bar-track"><div class="bar-fill soft" style="width:8%">990</div></div></div>
       </div>
       <div class="table-wrap" style="margin-top:0">
@@ -918,8 +954,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <table>
         <thead><tr><th class="num">#</th><th>Önerilen soru</th><th>Dayanağı</th><th>Öncelik</th></tr></thead>
         <tbody>
-          <tr><td class="num">1</td><td>eSIM ücreti ne kadar? Geçiş ücreti nasıl hesaplanır?</td><td>Fiyat kümesi 59 kelime / 14.700 · PAA'da 10 tekil soru / 20 gösterim · "esim ücreti" panelinde marka referans dışı</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
-          <tr><td class="num">2</td><td>eSIM geçişi ne kadar sürede tamamlanır? Hat bu süre boyunca kullanılabilir mi?</td><td>PAA "Turkcell eSIM kaç saatte açılır?" (üçüncü taraf PDF'e atfediliyor) · sosyal mecrada en sık geri bildirim teması</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+          <tr><td class="num">1</td><td>eSIM ücreti ne kadar? Geçiş ücreti nasıl hesaplanır?</td><td>Fiyat kümesi 59 kelime / 14.700 · PAA'da 10 tekil soru / 20 Impression · "esim ücreti" panelinde marka referans dışı</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+          <tr><td class="num">2</td><td>eSIM geçişi ne kadar sürede tamamlanır? Hat bu süre boyunca kullanılabilir mi?</td><td>PAA "Turkcell eSIM kaç saatte açılır?" (citation üçüncü taraf PDF'e gidiyor) · sosyal mecrada en sık geri bildirim teması</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
           <tr><td class="num">3</td><td>e-Devlet onayı nasıl verilir? Onay sonrasında hangi adım gelir?</td><td>e-Devlet kümesi 12 kelime / 1.280 · related search "Turkcell esim e-Devlet Onayı" · Technopat sinyali</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
           <tr><td class="num">4</td><td>Telefonumun eSIM desteklediğini nasıl anlarım?</td><td>"telefonum e sim destekliyor mu" 1.300 (KD 0) · "e sim hangi telefonlarda var" 720 · PAA cihaz kümesi 6 soru</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
           <tr><td class="num">5</td><td>eSIM ile fiziksel SIM arasındaki fark nedir?</td><td>Tanım kümesi 27 kelime / 32.920 · "e sim ne demek" 1.000 · karşılaştırma tablosu için doğal zemin</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
@@ -952,8 +988,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <thead><tr><th>Sayfa</th><th class="num">Görünür metin</th><th class="num">H1-H3 başlık</th><th class="num">JSON-LD bloğu</th></tr></thead>
         <tbody>
           <tr class="us"><td><b>Turkcell</b></td><td class="num"><b>9.073 krk</b></td><td class="num">26</td><td class="num"><b>0</b></td></tr>
-          <tr><td>Türk Telekom</td><td class="num">23.199 krk <span class="muted">(2,6x)</span></td><td class="num">63</td><td class="num">0</td></tr>
-          <tr><td>Vodafone</td><td class="num">31.415 krk <span class="muted">(3,5x)</span></td><td class="num">45</td><td class="num">3</td></tr>
+          <tr><td>Türk Telekom</td><td class="num">23.199 krk <span class="muted">(2.6x)</span></td><td class="num">63</td><td class="num">0</td></tr>
+          <tr><td>Vodafone</td><td class="num">31.415 krk <span class="muted">(3.5x)</span></td><td class="num">45</td><td class="num">3</td></tr>
         </tbody>
       </table>
     </div>
@@ -1018,7 +1054,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
           <tr><td>iOS / Android ayrı adım anlatımı</td><td><span class="pill p-bad">yok</span></td><td><span class="pill p-pos">var</span> <span class="muted">(5 + 5 adım)</span></td><td><span class="pill p-pos">var</span> <span class="muted">(çok sekmeli)</span></td></tr>
           <tr><td>Sekmeli akış bileşeni</td><td><span class="pill p-bad">yok</span></td><td><span class="pill p-pos">var</span></td><td><span class="pill p-pos">var</span></td></tr>
           <tr><td>Cihaz uyumluluk listesi</td><td><span class="pill p-amber">sorgulama aracı</span> <span class="muted">· liste ayrı sayfada</span></td><td><span class="pill p-pos">sayfa içinde</span></td><td><span class="pill p-pos">sayfa içinde</span></td></tr>
-          <tr><td>Fiyat / ücret beyanı</td><td><span class="pill p-bad">sayfada yok</span></td><td><span class="pill p-pos">var</span></td><td><span class="pill p-pos">var</span></td></tr>
+          <tr><td>eSIM geçiş ücreti beyanı</td><td><span class="pill p-bad">sayfada yer almıyor</span></td><td><span class="pill p-bad">sayfada yer almıyor</span></td><td><span class="pill p-bad">sayfada yer almıyor</span></td></tr>
           <tr><td>Görünür metin</td><td>9.073 krk</td><td>31.415 krk</td><td>23.199 krk</td></tr>
           <tr><td>H1-H3 başlık sayısı</td><td class="num">26</td><td class="num">45</td><td class="num">63</td></tr>
           <tr><td>Sayfa içi link sayısı</td><td><span class="pill p-amber">20</span></td><td>176 istek düzeyinde geniş navigasyon</td><td>170 istek düzeyinde geniş navigasyon</td></tr>
@@ -1059,7 +1095,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
           <li>Yurtdışından alınmış cihazlarda kullanım durumu</li>
           <li>Mağazaya gitmeden işlem yapılıp yapılamayacağı</li>
         </ul>
-        <p class="muted">Bu başlıkların beşi de yeni SSS önerileri listesinde karşılanmaktadır.</p>
+        <p class="muted">Bu başlıkların üçü yeni SSS öneri listesinde, ikisi ise mevcut SSS setinde karşılanmaktadır.</p>
       </div>
       <div class="card">
         <div class="tagline">Geri bildirim temaları</div>
@@ -1073,7 +1109,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
               <tr><td><b>Yurtdışı menşeli cihaz</b><br><span class="muted">"yurt dışından alınmış bir telefon kullanıyorsanız hiçbir şekilde aktif olmuyor" · Şikayetvar</span></td></tr>
               <tr><td><b>e-Devlet sonrası belirsizlik</b><br><span class="muted">"Edevletten onay da verdim fakat... 10-15dk sonra hata veriyor" · Technopat</span></td></tr>
               <tr><td><b>Mağaza zorunluluğu algısı</b><br><span class="muted">"bayiye gitmeden alınamıyor. böyle bir şey yok!" · Ekşi Sözlük</span></td></tr>
-              <tr><td><b>Bayi fiyat farkı</b><br><span class="muted">"turkcell internet sitesinde 67.40 tl. çakal bayiler kafalarına göre fiyat koyuyorlar" · Ekşi Sözlük</span></td></tr>
+              <tr><td><b>Bayi fiyat farkı</b><br><span class="muted">"turkcell internet sitesinde 67.40 tl" · Ekşi Sözlük · bayilerde farklı fiyat uygulandığı aktarılmaktadır</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -1106,7 +1142,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       </table>
     </div>
     <div class="callout callout--warn">
-      <p><b>Şerh.</b> Bu ifadeler platformun kendi sayfa metinleridir, bağımsız olarak doğrulanmamıştır. Rakip markalar için aynı yöntemle karşılaştırmalı hacim alınmadığından sektör ortalamasıyla kıyaslanmamaktadır. Sayı olarak değil, hangi konu başlıklarının öne çıktığını gösteren bir sinyal olarak okunması önerilir.</p>
+      <p><b>Şerh.</b> Bu ifadeler platformun kendi sayfa metinleridir, bağımsız olarak doğrulanmamıştır. Sayı olarak değil, hangi konu başlıklarının öne çıktığını gösteren bir sinyal olarak okunması önerilir.</p>
     </div>
 
     <div class="insight">
@@ -1125,18 +1161,18 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <table>
         <thead><tr><th>Sayfa</th><th>Cihaz</th><th class="num"><span class="term" data-term="LCP">LCP</span></th><th class="num"><span class="term" data-term="INP">INP</span></th><th class="num"><span class="term" data-term="CLS">CLS</span></th><th class="num"><span class="term" data-term="FCP">FCP</span></th><th class="num"><span class="term" data-term="TTFB">TTFB</span></th><th>Genel</th></tr></thead>
         <tbody>
-          <tr class="us"><td><b>Turkcell eSIM</b></td><td>Mobil</td><td class="num"><b>1,05 sn</b></td><td class="num"><b>147 ms</b></td><td class="num"><b>0,00</b></td><td class="num"><b>0,96 sn</b></td><td class="num"><b>308 ms</b></td><td><span class="pill p-pos">FAST</span></td></tr>
-          <tr class="us"><td><b>Turkcell eSIM</b></td><td>Masaüstü</td><td class="num"><b>1,37 sn</b></td><td class="num"><b>38 ms</b></td><td class="num"><b>0,00</b></td><td class="num"><b>1,22 sn</b></td><td class="num"><b>315 ms</b></td><td><span class="pill p-pos">FAST</span></td></tr>
-          <tr><td>Vodafone e-SIM</td><td>Mobil</td><td class="num">1,13 sn</td><td class="num">157 ms</td><td class="num">0,07</td><td class="num">0,75 sn</td><td class="num">288 ms</td><td><span class="pill p-pos">FAST</span></td></tr>
-          <tr><td>Vodafone e-SIM</td><td>Masaüstü</td><td class="num">0,79 sn</td><td class="num">58 ms</td><td class="num">0,06</td><td class="num">0,48 sn</td><td class="num">175 ms</td><td><span class="pill p-pos">FAST</span></td></tr>
-          <tr><td>Türk Telekom eSIM</td><td>Mobil</td><td class="num">3,38 sn</td><td class="num">193 ms</td><td class="num">0,00</td><td class="num">3,42 sn</td><td class="num">843 ms</td><td><span class="pill p-bad">SLOW</span></td></tr>
-          <tr><td>Türk Telekom eSIM</td><td>Masaüstü</td><td class="num">2,67 sn</td><td class="num">77 ms</td><td class="num">0,02</td><td class="num">2,52 sn</td><td class="num">771 ms</td><td><span class="pill p-amber">AVERAGE</span></td></tr>
-          <tr><td><b>İyi eşiği</b></td><td>-</td><td class="num">≤ 2,5 sn</td><td class="num">≤ 200 ms</td><td class="num">≤ 0,10</td><td class="num">≤ 1,8 sn</td><td class="num">≤ 0,8 sn</td><td>-</td></tr>
+          <tr class="us"><td><b>Turkcell eSIM</b></td><td>Mobil</td><td class="num"><b>1.05 sn</b></td><td class="num"><b>147 ms</b></td><td class="num"><b>0.00</b></td><td class="num"><b>0.96 sn</b></td><td class="num"><b>308 ms</b></td><td><span class="pill p-pos">İyi</span></td></tr>
+          <tr class="us"><td><b>Turkcell eSIM</b></td><td>Masaüstü</td><td class="num"><b>1.37 sn</b></td><td class="num"><b>38 ms</b></td><td class="num"><b>0.00</b></td><td class="num"><b>1.22 sn</b></td><td class="num"><b>315 ms</b></td><td><span class="pill p-pos">İyi</span></td></tr>
+          <tr><td>Vodafone e-SIM</td><td>Mobil</td><td class="num">1.13 sn</td><td class="num">157 ms</td><td class="num">0.07</td><td class="num">0.75 sn</td><td class="num">288 ms</td><td><span class="pill p-pos">İyi</span></td></tr>
+          <tr><td>Vodafone e-SIM</td><td>Masaüstü</td><td class="num">0.79 sn</td><td class="num">58 ms</td><td class="num">0.06</td><td class="num">0.48 sn</td><td class="num">175 ms</td><td><span class="pill p-pos">İyi</span></td></tr>
+          <tr><td>Türk Telekom eSIM</td><td>Mobil</td><td class="num">3.38 sn</td><td class="num">193 ms</td><td class="num">0.00</td><td class="num">3.42 sn</td><td class="num">843 ms</td><td><span class="pill p-bad">Geliştirilebilir</span></td></tr>
+          <tr><td>Türk Telekom eSIM</td><td>Masaüstü</td><td class="num">2.67 sn</td><td class="num">77 ms</td><td class="num">0.02</td><td class="num">2.52 sn</td><td class="num">771 ms</td><td><span class="pill p-amber">Ortalama</span></td></tr>
+          <tr><td><b>İyi eşiği</b></td><td>-</td><td class="num">≤ 2.5 sn</td><td class="num">≤ 200 ms</td><td class="num">≤ 0.10</td><td class="num">≤ 1.8 sn</td><td class="num">≤ 0.8 sn</td><td>-</td></tr>
         </tbody>
       </table>
     </div>
     <div class="callout callout--pos">
-      <p><b>Turkcell eSIM sayfası beş metrikte de iyi eşiğinin içindedir.</b> CLS 0,00 değeri hem mobil hem masaüstünde ölçülmüştür; sayfada görsel kayma oluşmamaktadır. Masaüstü INP 38 ms ile karşılaştırma setinin en düşük değeridir.</p>
+      <p><b>Turkcell eSIM sayfası beş metrikte de iyi eşiğinin içindedir.</b> CLS 0.00 değeri hem mobil hem masaüstünde ölçülmüştür; sayfada görsel kayma oluşmamaktadır. Masaüstü INP 38 ms ile karşılaştırma setinin en düşük değeridir.</p>
     </div>
 
     <h3>Sayfa ile Site Geneli Arasındaki Ayrışma</h3>
@@ -1144,15 +1180,15 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <table>
         <thead><tr><th>Origin</th><th>Cihaz</th><th class="num">LCP</th><th class="num">INP</th><th class="num">TTFB</th><th>Genel</th></tr></thead>
         <tbody>
-          <tr><td>www.turkcell.com.tr</td><td>Mobil</td><td class="num">2,76 sn</td><td class="num"><span class="neg">402 ms</span></td><td class="num">1.169 ms</td><td><span class="pill p-amber">AVERAGE</span></td></tr>
-          <tr><td>www.turkcell.com.tr</td><td>Masaüstü</td><td class="num">1,96 sn</td><td class="num">129 ms</td><td class="num">790 ms</td><td><span class="pill p-pos">FAST</span></td></tr>
-          <tr><td>www.vodafone.com.tr</td><td>Mobil</td><td class="num">2,06 sn</td><td class="num">207 ms</td><td class="num">704 ms</td><td><span class="pill p-amber">AVERAGE</span></td></tr>
-          <tr><td>www.turktelekom.com.tr</td><td>Mobil</td><td class="num">4,44 sn</td><td class="num">212 ms</td><td class="num">901 ms</td><td><span class="pill p-bad">SLOW</span></td></tr>
+          <tr><td>www.turkcell.com.tr</td><td>Mobil</td><td class="num">2.76 sn</td><td class="num"><span class="neg">402 ms</span></td><td class="num">1.169 ms</td><td><span class="pill p-amber">Ortalama</span></td></tr>
+          <tr><td>www.turkcell.com.tr</td><td>Masaüstü</td><td class="num">1.96 sn</td><td class="num">129 ms</td><td class="num">790 ms</td><td><span class="pill p-pos">İyi</span></td></tr>
+          <tr><td>www.vodafone.com.tr</td><td>Mobil</td><td class="num">2.06 sn</td><td class="num">207 ms</td><td class="num">704 ms</td><td><span class="pill p-amber">Ortalama</span></td></tr>
+          <tr><td>www.turktelekom.com.tr</td><td>Mobil</td><td class="num">4.44 sn</td><td class="num">212 ms</td><td class="num">901 ms</td><td><span class="pill p-bad">Geliştirilebilir</span></td></tr>
         </tbody>
       </table>
     </div>
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Eşik üstü değerler eSIM sayfasından değil site genelinden gelmektedir. Mobil INP karşılaştırması bu ayrışmayı açıkça göstermektedir: eSIM sayfası <b>147 ms</b>, origin ortalaması <b>402 ms</b>. Sayfa, kendi origin'inin belirgin üzerinde performans göstermektedir. Bu nedenle site geneline yönelik hız değerlendirmeleri bu sayfaya doğrudan uygulanmamalıdır.
+      <span class="lead-in">Bulgu</span> Eşik üstü değerler eSIM sayfasından değil site genelinden gelmektedir. Mobil INP karşılaştırması bu ayrışmayı açıkça göstermektedir: eSIM sayfası <b>147 ms</b>, origin p75 değeri <b>402 ms</b>. Sayfa, kendi origin'inin belirgin üzerinde performans göstermektedir. Bu nedenle site geneline yönelik hız değerlendirmeleri bu sayfaya doğrudan uygulanmaması önerilir.
     </div>
 
     <h3>Laboratuvar Skorları · Lighthouse</h3>
@@ -1176,12 +1212,12 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <table>
         <thead><tr><th>Sayfa</th><th>Cihaz</th><th class="num">FCP</th><th class="num">LCP</th><th class="num">CLS</th><th class="num"><span class="term" data-term="TBT">TBT</span></th><th class="num">SI</th><th class="num">TTI</th></tr></thead>
         <tbody>
-          <tr class="us"><td>Turkcell eSIM</td><td>Mobil</td><td class="num">2,31 sn</td><td class="num">2,58 sn</td><td class="num">0,000</td><td class="num"><b>0 ms</b></td><td class="num">2,83 sn</td><td class="num">2,58 sn</td></tr>
-          <tr class="us"><td>Turkcell eSIM</td><td>Masaüstü</td><td class="num">0,63 sn</td><td class="num">0,78 sn</td><td class="num">0,001</td><td class="num"><b>0 ms</b></td><td class="num">1,74 sn</td><td class="num">0,78 sn</td></tr>
-          <tr><td>Vodafone</td><td>Mobil</td><td class="num">3,54 sn</td><td class="num">9,76 sn</td><td class="num">0,003</td><td class="num">440 ms</td><td class="num">6,42 sn</td><td class="num">9,76 sn</td></tr>
-          <tr><td>Vodafone</td><td>Masaüstü</td><td class="num">0,42 sn</td><td class="num">1,58 sn</td><td class="num">0,629</td><td class="num">260 ms</td><td class="num">1,70 sn</td><td class="num">1,99 sn</td></tr>
-          <tr><td>Türk Telekom</td><td>Mobil</td><td class="num">10,67 sn</td><td class="num">28,18 sn</td><td class="num">0,000</td><td class="num">1.150 ms</td><td class="num">27,27 sn</td><td class="num">30,29 sn</td></tr>
-          <tr><td>Türk Telekom</td><td>Masaüstü</td><td class="num">2,16 sn</td><td class="num">5,40 sn</td><td class="num">0,000</td><td class="num">640 ms</td><td class="num">10,02 sn</td><td class="num">5,81 sn</td></tr>
+          <tr class="us"><td>Turkcell eSIM</td><td>Mobil</td><td class="num">2.31 sn</td><td class="num">2.58 sn</td><td class="num">0.000</td><td class="num"><b>0 ms</b></td><td class="num">2.83 sn</td><td class="num">2.58 sn</td></tr>
+          <tr class="us"><td>Turkcell eSIM</td><td>Masaüstü</td><td class="num">0.63 sn</td><td class="num">0.78 sn</td><td class="num">0.001</td><td class="num"><b>0 ms</b></td><td class="num">1.74 sn</td><td class="num">0.78 sn</td></tr>
+          <tr><td>Vodafone</td><td>Mobil</td><td class="num">3.54 sn</td><td class="num">9.76 sn</td><td class="num">0.003</td><td class="num">440 ms</td><td class="num">6.42 sn</td><td class="num">9.76 sn</td></tr>
+          <tr><td>Vodafone</td><td>Masaüstü</td><td class="num">0.42 sn</td><td class="num">1.58 sn</td><td class="num">0.629</td><td class="num">260 ms</td><td class="num">1.70 sn</td><td class="num">1.99 sn</td></tr>
+          <tr><td>Türk Telekom</td><td>Mobil</td><td class="num">10.67 sn</td><td class="num">28.18 sn</td><td class="num">0.000</td><td class="num">1.150 ms</td><td class="num">27.27 sn</td><td class="num">30.29 sn</td></tr>
+          <tr><td>Türk Telekom</td><td>Masaüstü</td><td class="num">2.16 sn</td><td class="num">5.40 sn</td><td class="num">0.000</td><td class="num">640 ms</td><td class="num">10.02 sn</td><td class="num">5.81 sn</td></tr>
         </tbody>
       </table>
     </div>
@@ -1206,7 +1242,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
       <div class="bar-row"><span class="bar-lbl">Turkcell eSIM</span><div class="bar-track"><div class="bar-fill us" style="width:5.4%">302</div></div></div>
     </div>
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Turkcell sayfası rakiplerinden yaklaşık <b>11x ve 18x daha hafiftir</b>. DOM element sayısı 388 ile rakiplerin altıda biri düzeyindedir. Bu, içerik derinleştirme çalışmasının performans bütçesi açısından geniş bir alan içinde yürütülebileceğini göstermektedir.
+      <span class="lead-in">Bulgu</span> Turkcell sayfası rakiplerinden yaklaşık <b>11x ve 18x daha hafiftir</b>. DOM element sayısı 388 ile rakiplerin beşte biri ile sekizde biri arasındadır. Bu, içerik derinleştirme çalışmasının performans bütçesi açısından geniş bir alan içinde yürütülebileceğini göstermektedir.
     </div>
 
     <h3>Üçüncü Parti Yükü</h3>
@@ -1220,6 +1256,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         </tbody>
       </table>
     </div>
+    <p class="tcap">Turkcell sayfasının üçüncü parti yükü 183 KiB ile setin en düşük değeridir; Türk Telekom 2.028 KiB seviyesindedir.</p>
 
     <h3>Geliştirme Alanları</h3>
     <p>Lighthouse tahmini kazançları aşağıdadır. Sayfa halihazırda eşiklerin içinde olduğundan bu maddeler kritik değil, marjinal iyileştirme niteliğindedir.</p>
@@ -1264,21 +1301,22 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         </tbody>
       </table>
     </div>
+    <p class="tcap">Sayfada 16 SSS bulunmasına rağmen JSON-LD blok sayısı 0 olarak ölçülmüştür.</p>
 
     <h3>Doküman Yükü</h3>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Öğe</th><th class="num">Değer</th></tr></thead>
         <tbody>
-          <tr><td>HTML dokümanı</td><td class="num">251,9 KB</td></tr>
-          <tr class="us"><td><b>Bunun içindeki tek inline script</b></td><td class="num"><b>210,7 KB · dokümanın ~%84'ü</b></td></tr>
+          <tr><td>HTML dokümanı</td><td class="num">251.9 KB</td></tr>
+          <tr class="us"><td><b>Bunun içindeki tek inline script</b></td><td class="num"><b>210.7 KB · dokümanın ~%84'ü</b></td></tr>
           <tr><td>Inline script içeriği</td><td class="num">Dynatrace RUM ajanı</td></tr>
           <tr><td>Görünür metin</td><td class="num">9.073 karakter</td></tr>
         </tbody>
       </table>
     </div>
     <div class="insight">
-      <span class="lead-in">Bulgu</span> Dokümanın büyük bölümü ölçüm ajanıdır; gerçek içerik <b>9 KB</b> düzeyindedir. Ölçüm ajanının harici ve önbelleklenebilir bir dosyaya taşınması, her sayfa isteğinde 210,7 KB'lik bloğun yeniden indirilmesini önleyebilir. Sayfa halihazırda eşiklerin içinde olduğundan bu madde performansı düzeltmek için değil, doküman ekonomisi için değerlendirilebilir.
+      <span class="lead-in">Bulgu</span> Dokümanın büyük bölümü ölçüm ajanıdır; gerçek içerik <b>9 KB</b> düzeyindedir. Ölçüm ajanının harici ve önbelleklenebilir bir dosyaya taşınması, her sayfa isteğinde 210.7 KB'lik bloğun yeniden indirilmesini önleyebilir. Sayfa halihazırda eşiklerin içinde olduğundan bu madde performansı düzeltmek için değil, doküman ekonomisi için değerlendirilebilir.
     </div>
 
     <h3>Render'ı Bloke Eden Kaynaklar</h3>
@@ -1318,7 +1356,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <thead><tr><th>Ölçüm</th><th class="num">Değer</th><th>Not</th></tr></thead>
         <tbody>
           <tr><td>Toplam görsel</td><td class="num">50 <span class="muted">(44 SVG + 6 PNG)</span></td><td>-</td></tr>
-          <tr><td><code>width</code> / <code>height</code> tanımı olmayan</td><td class="num">50 / 50</td><td>CLS 0,00 olduğundan acil değildir; tasarım değişikliğinde koruma sağlar</td></tr>
+          <tr><td><code>width</code> / <code>height</code> tanımı olmayan</td><td class="num">50 / 50</td><td>CLS 0.00 olduğundan acil değildir; tasarım değişikliğinde koruma sağlayabilir</td></tr>
           <tr><td><span class="term" data-term="lazy loading">loading="lazy"</span> tanımı olmayan</td><td class="num">50 / 50</td><td>-</td></tr>
           <tr class="us"><td><b>Ekran dışında olup ertelenmeyen</b></td><td class="num"><b>23</b></td><td>Gereksiz ilk yük oluşturmaktadır</td></tr>
           <tr><td>Görüntülenenden büyük çözünürlükte inen</td><td class="num">0</td><td><span class="pill p-pos">Görsel teslimi tam puan</span></td></tr>
@@ -1341,13 +1379,13 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <div class="rec">
       <div class="rec__head"><span class="ttl">1. Hero alanının ekran payı</span><span class="prio prio-1">Öncelikli</span></div>
       <p>Hero, masaüstünde 631 px ile ekranın <b>%70'ini</b>, mobilde 572 px ile <b>%63'ünü</b> kaplamaktadır. Hero içeriği masaüstünde yalnızca 285 px, mobilde 300 px sürmekte; geriye masaüstünde <b>346 px</b>, mobilde yaklaşık <b>272 px</b> boş lacivert alan kalmaktadır.</p>
-      <p><b>Öneri:</b> Boş alanın, tanım pasajı veya üç maddelik değer bloğu ile doldurulması değerlendirilebilir. Bu düzenleme hem ilk ekran verimliliğini artırır hem GEO tarafında ihtiyaç duyulan alıntılanabilir pasaja doğal bir konum sağlar.</p>
+      <p><b>Öneri:</b> Boş alanın, tanım pasajı veya üç maddelik değer bloğu ile doldurulması değerlendirilebilir. Bu düzenleme hem ilk ekran verimliliğini artırabilir hem GEO tarafında ihtiyaç duyulan alıntılanabilir pasaja doğal bir konum sağlayabilir.</p>
       <p class="meta">Ölçüm: masaüstü 1440x900 · mobil 412x915</p>
     </div>
 
     <div class="rec">
       <div class="rec__head"><span class="ttl">2. Birincil CTA'nın konumu</span><span class="prio prio-1">Öncelikli</span></div>
-      <p>Sayfada yalnızca 5 etkileşim öğesi bulunmaktadır ve hero'da dönüşüm CTA'sı yer almamaktadır. Birincil aksiyon olan "Hemen Başla" 1.287 px konumunda, ilk ekranın yaklaşık <b>1,4 ekran altında</b>dır. Hero'daki tek buton olan "Neden eSIM?" bilgi yönlendirmesi işlevi görmektedir.</p>
+      <p>Sayfada yalnızca 5 etkileşim öğesi bulunmaktadır ve hero'da dönüşüm CTA'sı yer almamaktadır. Birincil aksiyon olan "Hemen Başla" 1.287 px konumunda, ilk ekranın yaklaşık <b>1.4 ekran altında</b>dır. Hero'daki tek buton olan "Neden eSIM?" bilgi yönlendirmesi işlevi görmektedir.</p>
       <p><b>Öneri:</b> Hero içine birincil CTA yerleştirilmesi ve mevcut "Neden eSIM?" butonunun ikincil aksiyon olarak konumlandırılması önerilir. Mobilde sayfa 4.077 px uzunluğunda olduğundan yapışkan alt CTA çubuğu da değerlendirilebilir.</p>
     </div>
 
@@ -1360,19 +1398,19 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <div class="rec">
       <div class="rec__head"><span class="ttl">4. Cihaz uyumluluk deneyimi</span><span class="prio prio-2">Yüksek</span></div>
       <p>Cihaz uyumluluk bölümü sorgulama aracı olarak kurgulanmıştır; uyumlu cihaz listesi ayrı bir Pasaj sayfasında bulunmaktadır. Rakiplerin ikisinde de liste sayfa içindedir. Cihaz uyumu kümesi 102 kelime ve 12.500 aylık hacim taşımaktadır; "telefonum e sim destekliyor mu" tek başına 1.300 hacim ve KD 0 düzeyindedir.</p>
-      <p><b>Öneri:</b> Sorgulama aracının korunması, altına marka bazlı gruplanmış uyumlu cihaz listesinin gerçek HTML tablosu olarak eklenmesi önerilir. Bu düzenleme hem kullanıcı sorusunu araç kullanmadan cevaplar hem machine-readable içerik üretir.</p>
+      <p><b>Öneri:</b> Sorgulama aracının korunması, altına marka bazlı gruplanmış uyumlu cihaz listesinin gerçek HTML tablosu olarak eklenmesi önerilir. Bu düzenleme hem kullanıcı sorusunu araç kullanmadan cevaplayabilir hem machine-readable içerik üretebilir.</p>
     </div>
 
     <div class="rec">
       <div class="rec__head"><span class="ttl">5. Fiyat ve süre belirsizliğinin giderilmesi</span><span class="prio prio-1">Öncelikli</span></div>
-      <p>Sayfada ücret beyanı bulunmamaktadır. Fiyat kümesi 59 kelime ve 14.700 aylık hacim taşımakta, PAA'da 10 tekil soru ve 20 gösterimle en yoğun küme konumunda bulunmaktadır. Sosyal mecrada en sık tekrar eden ikinci tema ise hattın kapalı kaldığı süredir.</p>
-      <p><b>Öneri:</b> Ücret bilgisinin ve geçiş süresinin sayfada açık biçimde beyan edilmesi değerlendirilebilir. Bu iki bilgi, hem dönüşüm öncesi tereddüdü azaltır hem ilgili AI Overview panellerinde referans olma zeminini oluşturur.</p>
+      <p>Sayfada ücret beyanı bulunmamaktadır. Fiyat kümesi 59 kelime ve 14.700 aylık hacim taşımakta, PAA'da 10 tekil soru ve 20 Impression ile en yoğun küme konumunda bulunmaktadır. Sosyal mecrada en sık tekrar eden ikinci tema ise hattın kapalı kaldığı süredir.</p>
+      <p><b>Öneri:</b> Ücret bilgisinin ve geçiş süresinin sayfada açık biçimde beyan edilmesi değerlendirilebilir. Bu iki bilgi, hem dönüşüm öncesi tereddüdü azaltabilir hem ilgili AI Overview panellerinde referans olma zeminini oluşturabilir.</p>
     </div>
 
     <div class="rec">
       <div class="rec__head"><span class="ttl">6. Mobil deneyim</span><span class="prio prio-2">Yüksek</span></div>
-      <p>Mobilde sayfa 4.077 px uzunluğundadır. Intro bölümü ekranın %71'ini, aktivasyon bölümü tam bir ekranı (%100), SSS bölümü ise 1,45 ekranı kaplamaktadır. Kullanıcı, birincil aksiyona ulaşmak için birden fazla ekran kaydırmaktadır.</p>
-      <p><b>Öneri:</b> Bölüm yüksekliklerinin mobilde sıkılaştırılması ve SSS bloğunun akordiyon olarak kapalı başlatılması değerlendirilebilir. Bu düzenleme, SSS içeriğini kaldırmadan sayfa uzunluğunu kısaltır.</p>
+      <p>Mobilde sayfa 4.077 px uzunluğundadır. Intro bölümü ekranın %71'ini, aktivasyon bölümü tam bir ekranı (%100), SSS bölümü ise 1.45 ekranı kaplamaktadır. Kullanıcı, birincil aksiyona ulaşmak için birden fazla ekran kaydırmaktadır.</p>
+      <p><b>Öneri:</b> Bölüm yüksekliklerinin mobilde sıkılaştırılması ve SSS bloğunun akordiyon olarak kapalı başlatılması değerlendirilebilir. Bu düzenleme, SSS içeriğini kaldırmadan sayfa uzunluğunu kısaltabilir.</p>
     </div>
 
     <div class="rec">
@@ -1382,7 +1420,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <div class="callout callout--info">
-      <p><b>Tasarım örneği.</b> Yukarıdaki bulgular, hedef sayfanın mevcut header, navigasyon ve footer yapısı korunarak dört tasarım varyantı üzerinden ayrıca çalışılmaktadır: (1) hero içinde CTA ve tanım pasajı, (2) iOS / Android sekmeli aktivasyon akışı, (3) sayfa içi cihaz uyumluluk tablosu, (4) fiyat ve süre bilgisini taşıyan bilgi şeridi. Varyantlar ayrı bir tasarım dokümanı olarak iletilecektir.</p>
+      <p><b>Tasarım örneği.</b> Yukarıdaki bulgular, hedef sayfanın mevcut header, navigasyon ve footer yapısı korunarak dört tasarım varyantı üzerinden ayrıca çalışılmaktadır: (1) hero içinde CTA ve tanım pasajı, (2) iOS / Android sekmeli aktivasyon akışı, (3) sayfa içi cihaz uyumluluk tablosu, (4) fiyat ve süre bilgisini taşıyan bilgi şeridi.</p>
     </div>
   </section>
 
@@ -1405,14 +1443,14 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Aksiyon</th><th>Etki alanı</th><th>Öncelik</th></tr></thead>
           <tbody>
-            <tr><td>Dynatrace RUM ajanının (210,7 KB inline script, dokümanın %84'ü) harici ve önbelleklenebilir bir dosyaya taşınması</td><td>Doküman ekonomisi · her istekte tekrar indirilen yükün azalması</td><td><span class="prio prio-2">Yüksek</span></td></tr>
+            <tr><td>Dynatrace RUM ajanının (210.7 KB inline script, dokümanın %84'ü) harici ve önbelleklenebilir bir dosyaya taşınması</td><td>Doküman ekonomisi · her istekte tekrar indirilen yükün azalması</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>jQuery 3.7.1 ve select2 kütüphanelerinin üçüncü parti CDN yerine kendi alan adı üzerinden servis edilmesi</td><td>Kritik yoldan iki dış DNS/TLS bağımlılığının kaldırılması</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>select2 4.1.0-rc.0 sürümünün kararlı sürüme alınması</td><td>Üretim ortamında release candidate bağımlılığının giderilmesi</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>3 harici script'e <code>defer</code> tanımlanması (üçü de senkron yüklenmektedir)</td><td>render-blocking · mobil tahmini kazanç 870 ms</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>select2 CSS'inin kritik yoldan çıkarılması veya kritik CSS'in inline'a alınması</td><td>FCP / LCP · tahmini kazanç 81 ms</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td><code>merlincdn.net</code> üzerindeki CSS, JS ve font dosyalarında cache ömrünün uzatılması (mevcut max-age=86400; dosyalar <code>?v=</code> sürüm parametresi taşımaktadır)</td><td>Tekrar ziyaret performansı · 52 KiB</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td>Ekran dışında kalan 23 görsele <code>loading="lazy"</code> tanımlanması</td><td>İlk yükte gereksiz indirmenin önlenmesi</td><td><span class="prio prio-3">Orta</span></td></tr>
-            <tr><td>50 görsele <code>width</code> / <code>height</code> tanımlanması</td><td>CLS koruması · mevcut değer 0,00 olduğundan tasarım değişikliklerine karşı önlem niteliğindedir</td><td><span class="prio prio-4">Takip edilebilir</span></td></tr>
+            <tr><td>50 görsele <code>width</code> / <code>height</code> tanımlanması</td><td>CLS koruması · mevcut değer 0.00 olduğundan tasarım değişikliklerine karşı önlem niteliğindedir</td><td><span class="prio prio-4">Takip edilebilir</span></td></tr>
             <tr><td>Kullanılmayan JavaScript'in ayıklanması (mobilde 44 KiB, masaüstünde 42 KiB)</td><td>LCP / FCP · mobilde tahmini 300 ms</td><td><span class="prio prio-4">Takip edilebilir</span></td></tr>
             <tr><td>Masaüstü sunucu yanıt süresinin gözden geçirilmesi (497 ms · mobilde 160 ms)</td><td>TTFB tutarlılığı</td><td><span class="prio prio-4">Takip edilebilir</span></td></tr>
           </tbody>
@@ -1429,9 +1467,9 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Aksiyon</th><th>Etki alanı</th><th>Öncelik</th></tr></thead>
           <tbody>
-            <tr><td>Gövde metni, ara başlıklar ve SSS sorularında boşluklu "e SIM" yazımının doğal biçimde kullanılması</td><td>Talebin %59,7'sini oluşturan yazım formu · "e sim nedir" 22.200 (bitişik formun 4,1 katı)</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+            <tr><td>Gövde metni, ara başlıklar ve SSS sorularında boşluklu "e SIM" yazımının doğal biçimde kullanılması</td><td>Talebin %59.7'sini oluşturan yazım formu · "e sim nedir" 22.200 (bitişik formun 4.1 katı)</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>40-60 kelimelik alıntılanabilir tanım pasajının hero altına yerleştirilmesi</td><td>Tanım kümesi 27 kelime / 32.920 hacim · AI Overview tanım sahipliği</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
-            <tr><td>Ücret bilgisinin sayfada açık biçimde beyan edilmesi</td><td>Fiyat kümesi 59 kelime / 14.700 · PAA'da 10 tekil soru / 20 gösterim</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+            <tr><td>Ücret bilgisinin sayfada açık biçimde beyan edilmesi</td><td>Fiyat kümesi 59 kelime / 14.700 · PAA'da 10 tekil soru / 20 Impression</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>14 yeni SSS sorusunun eklenmesi (bkz. Bölüm 06); mevcut 16 soruyla çakışma bulunmamaktadır</td><td>Karar öncesi aşamanın karşılanması · PAA cevap kaynağı olma</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Aktivasyon adımlarının iOS ve Android olarak ayrıştırılıp ekran bazlı yazılması</td><td>Aktivasyon kümesi 42 kelime / 10.680 · "esim nasıl aktif edilir" panelinde referans dışı konum</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>eSIM ile fiziksel SIM karşılaştırma tablosunun eklenmesi (gerçek HTML tablosu olarak)</td><td>Tanım ve karar kümesi · machine-readable içerik</td><td><span class="prio prio-2">Yüksek</span></td></tr>
@@ -1454,13 +1492,13 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
         <table>
           <thead><tr><th>Aksiyon</th><th>Etki alanı</th><th>Öncelik</th></tr></thead>
           <tbody>
-            <tr><td>Hero içine birincil dönüşüm CTA'sı yerleştirilmesi</td><td>Birincil aksiyon şu an 1.287 px'te, ilk ekranın 1,4 ekran altındadır</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+            <tr><td>Hero içine birincil dönüşüm CTA'sı yerleştirilmesi</td><td>Birincil aksiyon şu an 1.287 px'te, ilk ekranın 1.4 ekran altındadır</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Hero'daki boş alanın (masaüstü 346 px, mobil ≈272 px) tanım pasajı veya değer bloğuyla değerlendirilmesi</td><td>Hero masaüstünde ekranın %70'ini kaplamakta, içeriği 285 px sürmektedir</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Aktivasyon bölümünün iOS / Android sekmeli bileşene dönüştürülmesi</td><td>Rakiplerin ikisinde de sekmeli akış bulunmaktadır</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Ücret ve geçiş süresi bilgisini taşıyan bilgi şeridi eklenmesi</td><td>Dönüşüm öncesi tereddüdün azaltılması · sosyal mecrada en sık iki tema</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Cihaz uyumluluk aracının altına sayfa içi uyumlu cihaz listesi eklenmesi</td><td>Kullanıcının araç kullanmadan cevaba ulaşması</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>Mobilde yapışkan alt CTA çubuğu değerlendirilmesi</td><td>Mobil sayfa uzunluğu 4.077 px</td><td><span class="prio prio-2">Yüksek</span></td></tr>
-            <tr><td>SSS bloğunun akordiyon olarak kapalı başlatılması</td><td>SSS masaüstünde sayfanın %40'ını, mobilde 1,45 ekranı kaplamaktadır</td><td><span class="prio prio-2">Yüksek</span></td></tr>
+            <tr><td>SSS bloğunun akordiyon olarak kapalı başlatılması</td><td>SSS masaüstünde sayfanın %40'ını, mobilde 1.45 ekranı kaplamaktadır</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>Mobilde bölüm yüksekliklerinin sıkılaştırılması</td><td>Intro %71, aktivasyon %100 ekran oranı</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td>"Neden eSIM?" butonunun ikincil aksiyon olarak konumlandırılması</td><td>Hero'daki tek buton şu an bilgi yönlendirmesidir</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td>Sayfa içi bağlantı yüzeyinin genişletilmesi (mevcut 20 link)</td><td>İlgili eSIM sayfaları ve paket sayfalarına yönlendirme</td><td><span class="prio prio-3">Orta</span></td></tr>
@@ -1478,10 +1516,10 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
           <tbody>
             <tr><td>FAQPage JSON-LD eklenmesi (mevcut 16 SSS + önerilen 14 soru)</td><td>Sayfada 0 JSON-LD bloğu bulunmaktadır; Vodafone 3 blok taşımaktadır</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Alıntılanabilir tanım pasajının eklenmesi (40-60 kelime, tek paragrafta tamamlanan, her iki yazımı içeren)</td><td>12 AI Overview panelinin 8'inde tanım kaynağı Vodafone</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
-            <tr><td>"Turkcell eSIM kaç saatte açılır?" ve "Turkcell'de eSIM var mı?" sorularının sayfada açık ve işaretlenmiş biçimde cevaplanması</td><td>İki marka sorusu şu an talpa.org (2023 PDF) ve KKTCell alan adlarına atfedilmektedir</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
+            <tr><td>"Turkcell eSIM kaç saatte açılır?" ve "Turkcell'de eSIM var mı?" sorularının sayfada açık ve işaretlenmiş biçimde cevaplanması</td><td>İki marka sorusunda citation şu an talpa.org (2023 PDF) ve KKTCell alan adlarına gitmektedir</td><td><span class="prio prio-1">Öncelikli</span></td></tr>
             <tr><td>Cihaz uyumluluk ve karşılaştırma içeriğinin gerçek HTML tablosu olarak sunulması</td><td>machine-readable içerik · yapay zeka yüzeylerinde alıntılanabilirlik</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td>BreadcrumbList JSON-LD eklenmesi</td><td>Sayfanın site hiyerarşisindeki konumunun makine tarafında tanımlanması</td><td><span class="prio prio-2">Yüksek</span></td></tr>
-            <tr><td>Product veya Service schema ile ücret bilgisinin işaretlenmesi</td><td>Fiyat kümesi PAA'da 20 gösterimle en yoğun kümedir</td><td><span class="prio prio-2">Yüksek</span></td></tr>
+            <tr><td>Product veya Service schema ile ücret bilgisinin işaretlenmesi</td><td>Fiyat kümesi PAA'da 20 Impression ile en yoğun kümedir</td><td><span class="prio prio-2">Yüksek</span></td></tr>
             <tr><td><code>dateModified</code> alanının hem görünür biçimde hem işaretleme içinde verilmesi</td><td>Tazelik sinyali · "turkcell e sim ücreti 2025" gibi yıl içeren sorgular</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td>robots.txt içinde GPTBot, Google-Extended ve PerplexityBot yönergelerinin gözden geçirilmesi</td><td>Yapay zeka yüzeylerinde içerik erişilebilirliği</td><td><span class="prio prio-3">Orta</span></td></tr>
             <tr><td>Alan adı kökünde llms.txt dosyası ile eSIM sayfalarının işaret edilmesi</td><td>Yapay zeka yüzeylerine yönelik içerik haritası</td><td><span class="prio prio-3">Orta</span></td></tr>
@@ -1493,7 +1531,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     </div>
 
     <div class="insight">
-      <span class="lead-in">Sonraki adım</span> İlk fazda üç madde birlikte ele alınabilir: <b>FAQPage işaretlemesi</b> (mevcut içerik üzerinde çalışır, yeni metin gerektirmez), <b>tanım pasajı</b> (hero'daki mevcut boş alanı kullanır) ve <b>ücret beyanı</b> (hem CRO hem GEO tarafında karşılık üretir). Aksiyonların önceliklendirilmesi Turkcell ekibinin stratejik tercihleri doğrultusunda güncellenebilir.
+      <span class="lead-in">Sonraki adım</span> İlk fazda üç madde birlikte ele alınabilir: <b>FAQPage işaretlemesi</b> (mevcut içerik üzerinde çalışır, yeni metin gerektirmez), <b>tanım pasajı</b> (hero'daki mevcut boş alanı kullanır) ve <b>ücret beyanı</b> (hem CRO hem GEO tarafında karşılık üretebilir). Aksiyonların önceliklendirilmesi Turkcell ekibinin stratejik tercihleri doğrultusunda güncellenebilir.
     </div>
   </section>
 
@@ -1508,7 +1546,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     <ul>
       <li><b>Performans ve saha verisi:</b> PageSpeed Insights · Lighthouse 13.4.1 · Chrome User Experience Report (CrUX) p75 · 3 Ağustos 2026, 15:14-15:18 UTC</li>
       <li><b>SERP, AI Overview, PAA:</b> Google Türkiye canlı sonuç sayfaları (konum: Türkiye, dil: tr) · 13 sorgu-cihaz kesiti · 14:51-15:23</li>
-      <li><b>Arama hacmi ve KD:</b> Google Ads arama hacmi verisi · aylık ortalama · 1.638 kelime / 405.070 arama</li>
+      <li><b>Arama hacmi ve KD:</b> Arama hacmi ve keyword difficulty verisi · aylık ortalama · 1.638 kelime / 405.070 arama</li>
       <li><b>Sayfa yapısı ve işaretleme:</b> Ham HTML analizi ve tarayıcı ölçümü · 1440x900 ve 412x915 viewport</li>
       <li><b>Sosyal duygu:</b> Ekşi Sözlük, Şikayetvar, Technopat, Donanım Haber, R10, Reddit · 9 sorgu / 162 organik sonuç / 96 tekil URL</li>
       <li><b>Referans dokümantasyon:</b> <a href="https://web.dev/vitals/" target="_blank" rel="noopener">web.dev/vitals</a> · <a href="https://schema.org/FAQPage" target="_blank" rel="noopener">schema.org/FAQPage</a></li>
@@ -1535,8 +1573,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
 <div class="termtip" id="termtip"></div>
 
 <footer>
-  Turkcell eSIM Landing Page · SEO / GEO / CRO Değerlendirmesi · Gözlem tarihi: 3 Ağustos 2026 · Hedef: turkcell.com.tr/kampanya/esim/<br>
-  Hazırlayan: <b>Inbound</b>
+  Turkcell eSIM Landing Page · SEO / GEO / CRO Değerlendirmesi · Gözlem tarihi: 3 Ağustos 2026 · Hedef: turkcell.com.tr/kampanya/esim/
 </footer>
 
 <script>
@@ -1554,11 +1591,11 @@ footer{max-width:var(--maxw);margin:0 auto;padding:20px 22px 54px;color:var(--in
     "JSON-LD":"Yapılandırılmış verinin sayfaya gömüldüğü, script etiketi içinde taşınan işaretleme biçimi. Google'ın önerdiği yöntemdir.",
     "schema":"Schema.org sözlüğüyle tanımlanan yapılandırılmış veri. Sayfanın içeriğinin ne anlama geldiğini arama motorlarına makine okunur biçimde bildirir.",
     "CWV":"Core Web Vitals · Google'ın kullanıcı deneyimini ölçtüğü üç temel metrik: LCP (yükleme), INP (etkileşim) ve CLS (görsel kararlılık).",
-    "LCP":"Largest Contentful Paint · ekrandaki en büyük içerik öğesinin görünür hale gelme süresi. İyi eşiği 2,5 saniyedir.",
+    "LCP":"Largest Contentful Paint · ekrandaki en büyük içerik öğesinin görünür hale gelme süresi. İyi eşiği 2.5 saniyedir.",
     "INP":"Interaction to Next Paint · kullanıcı etkileşimine verilen görsel yanıtın gecikmesi. İyi eşiği 200 milisaniyedir.",
-    "CLS":"Cumulative Layout Shift · sayfa yüklenirken oluşan beklenmedik görsel kayma miktarı. İyi eşiği 0,10'dur.",
-    "FCP":"First Contentful Paint · ilk içerik öğesinin ekranda görünme süresi. İyi eşiği 1,8 saniyedir.",
-    "TTFB":"Time to First Byte · sunucudan ilk baytın gelme süresi. İyi eşiği 0,8 saniyedir.",
+    "CLS":"Cumulative Layout Shift · sayfa yüklenirken oluşan beklenmedik görsel kayma miktarı. İyi eşiği 0.10'dur.",
+    "FCP":"First Contentful Paint · ilk içerik öğesinin ekranda görünme süresi. İyi eşiği 1.8 saniyedir.",
+    "TTFB":"Time to First Byte · sunucudan ilk baytın gelme süresi. İyi eşiği 0.8 saniyedir.",
     "TBT":"Total Blocking Time · ana iş parçacığının kullanıcı girdisine yanıt veremediği toplam süre. Laboratuvar metriğidir.",
     "CrUX":"Chrome User Experience Report · gerçek kullanıcı ziyaretlerinden derlenen saha performans verisi. Değerler 75. yüzdelik (p75) üzerinden raporlanır.",
     "Lighthouse":"Google'ın laboratuvar koşullarında performans, erişilebilirlik, en iyi uygulamalar ve SEO skorları üreten denetim aracı.",
