@@ -140,7 +140,7 @@ Video otoritesi metin katmanına taşınmamış durumdadır.
 | **Geri dönüşsüzlük algısı** | "qr kod üretildiği anda sim kartınız kullanıma kapatılıyor" | Ekşi |
 | **Cihaz değiştirme** | "başka telefona aktarma konularında sorun olabiliyor" | Ekşi |
 | **Yurtdışı menşeli cihaz** | "yurt dışından alınmış bir telefon kullanıyorsanız hiçbir şekilde aktif olmuyor" | Şikayetvar |
-| **e-Devlet sonrası belirsizlik** | "Edevletten onay da verdim fakat... 10-15dk sonra hata veriyor" | Technopat |
+| **e-Devlet sonrası belirsizlik** | "Edevletten onay da verdim fakat... 10-15dk sonra hata veriyor" | [Technopat](https://www.technopat.net/sosyal/konu/turkcell-e-sim-etkinlestirilemiyor-hatasi.3546310/) · 6 Aralık 2024 |
 | **Mağaza zorunluluğu algısı** | "bayiye gitmeden alınamıyor. böyle bir şey yok!" | Ekşi |
 | **Bayi fiyat farkı** | "turkcell internet sitesinde 67.40 tl. çakal bayiler kafalarına göre fiyat koyuyorlar" | Ekşi |
 
