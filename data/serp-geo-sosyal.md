@@ -133,23 +133,27 @@ Video otoritesi metin katmanına taşınmamış durumdadır.
 *Şerh: Bu ifadeler platformun kendi sayfa metinleridir, bağımsız doğrulanmamıştır.*
 
 ### Tekrar eden temalar (52 geri bildirim sinyali)
+Kaynak sütunundaki bağlantılar tekil geri bildirim sayfasına gitmektedir (Şikayetvar'da tekil şikayet kaydı, Ekşi Sözlük'te tekil entry).
+
 | Tema | Örnek ifade | Kaynak |
 |---|---|---|
-| **QR kod geçerliliği** | "e-sim Eklenemedi, Bu kod artık geçerli değil" | Şikayetvar |
-| **Hattın kapalı kaldığı süre** | "Şu an hat kapalı e sim i kullanamıyor ancak fatura işliyor" | Şikayetvar |
-| **Geri dönüşsüzlük algısı** | "qr kod üretildiği anda sim kartınız kullanıma kapatılıyor" | Ekşi |
-| **Cihaz değiştirme** | "başka telefona aktarma konularında sorun olabiliyor" | Ekşi |
-| **Yurtdışı menşeli cihaz** | "yurt dışından alınmış bir telefon kullanıyorsanız hiçbir şekilde aktif olmuyor" | Şikayetvar |
+| **QR kod geçerliliği** | "e-sim Eklenemedi, Bu kod artık geçerli değil" | [Şikayetvar](https://www.sikayetvar.com/turkcell/turkcell-e-sim-yeni-telefonuma-yuklenmiyor) · 25 Aralık 2023 |
+| **Hattın kapalı kaldığı süre** | "3 gündür hiçbir şekilde hattı kullanamıyorum" | [Şikayetvar](https://www.sikayetvar.com/turkcell/e-sim-gecisinde-yasanan-sorun-nedeniyle-hattim-kapali-kaldi) · 1 Temmuz 2025 |
+| **Geri dönüşsüzlük algısı** | "sistemin oluşturduğu kod bir defa kullanılmış olduğu için de, artık aynı işlemleri tekrarlayarak aktivasyonu yapamıyorum" | [Ekşi](https://eksisozluk.com/entry/172854300) · 17 Şubat 2025 |
+| **Cihaz değiştirme** | "başka telefona aktarma konularında sorun olabiliyor" | [Ekşi](https://eksisozluk.com/entry/139654189) · 6 Temmuz 2022 |
+| **Yurtdışı menşeli cihaz** | "yurt dışından alınmış bir telefon kullanıyorsanız hiçbir şekilde aktif olmuyor" | [Şikayetvar](https://www.sikayetvar.com/turkcell/yurt-disi-telefonlarda-e-sim-sorunu-ve-ek-ucret-sikayeti) · 17 Temmuz 2025 |
 | **e-Devlet sonrası belirsizlik** | "Edevletten onay da verdim fakat... 10-15dk sonra hata veriyor" | [Technopat](https://www.technopat.net/sosyal/konu/turkcell-e-sim-etkinlestirilemiyor-hatasi.3546310/) · 6 Aralık 2024 |
-| **Mağaza zorunluluğu algısı** | "bayiye gitmeden alınamıyor. böyle bir şey yok!" | Ekşi |
-| **Bayi fiyat farkı** | "turkcell internet sitesinde 67.40 tl. çakal bayiler kafalarına göre fiyat koyuyorlar" | Ekşi |
+| **Mağaza zorunluluğu algısı** | "turkcell'de desteklenmiyor. illa şubeye gitmek lazımmış" | [Ekşi](https://eksisozluk.com/entry/146128882) · 9 Aralık 2022 |
+| **Bayi fiyat farkı** | "turkcell internet sitesinde 67.40 tl. çakal bayiler kafalarına göre fiyat koyuyorlar" | [Ekşi](https://eksisozluk.com/entry/146183364) · 10 Aralık 2022 |
+
+Not: "Geri dönüşsüzlük algısı" ve "Mağaza zorunluluğu algısı" satırlarındaki önceki ifadeler Turkcell eSIM kaynaklarında doğrulanamadığından (önceki geri dönüşsüzlük alıntısı Türk Telekom bağlamına ait bir entry'den geliyordu), her iki satır da Turkcell eSIM başlığında doğrulanmış tekil entry'lerle değiştirilmiştir. "Hattın kapalı kaldığı süre" alıntısının alındığı şikayet kaydının tekil sayfası yayında olmadığından, aynı temayı taşıyan ve tekil sayfası açık olan şikayet kaydı kullanılmıştır.
 
 ### Olumlu sinyaller (Turkcell'e özgü)
 | İfade | Kaynak |
 |---|---|
-| "ikinci bir telefon ya da çift hatlı bir telefona ihtiyaç duymadan... güzel bir hizmet" | eksisozluk.com/turkcell-esim |
-| "turkcell uygulaması üzerinden sorunsuz bir şekilde geçebilirsiniz" | eksisozluk.com/turkcell-esim?p=3 |
-| "memnun kaldım. performans olarak bir farkı yok" | eksisozluk.com/turkcell-esim |
+| "ikinci bir telefon ya da çift hatlı bir telefona ihtiyaç duymadan... güzel bir hizmet" | [Ekşi](https://eksisozluk.com/entry/132644418) |
+| "turkcell uygulaması üzerinden sorunsuz bir şekilde geçebilirsiniz" | [Ekşi](https://eksisozluk.com/entry/169000019) |
+| "memnun kaldım. performans olarak bir farkı yok" | [Ekşi](https://eksisozluk.com/entry/139654189) |
 
 ### Rakip fiyat anlatısı (karşılaştırma ekseni)
 | Marka | Sosyal mecrada geçen ücret ifadesi |
